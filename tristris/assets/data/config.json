@@ -73,15 +73,17 @@
     }
   },
   "input": {
-    "keyCodeEventMap": {
-      "16": "tetris/player/hold",
-      "37": "tetris/player/moveLeft",
-      "38": "tetris/player/rotate",
-      "39": "tetris/player/moveRight",
-      "40": "tetris/player/moveDown",
-      "77": "tetris/sound/toggleMusic",
-      "80": "tetris/game/togglePause",
-      "83": "tetris/sound/skipSong"
+    "contexts" : {
+      "running" : {
+        "83": "tetris/audio/skipSong",
+        "77": "tetris/audio/toggleMusic",
+        "80": "tetris/game/togglePause",
+        "16": "tetris/player/hold",
+        "40": "tetris/player/moveDown",
+        "37": "tetris/player/moveLeft",
+        "39": "tetris/player/moveRight",
+        "38": "tetris/player/rotate"
+      }
     }
   },
   "sound": {
