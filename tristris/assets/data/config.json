@@ -82,7 +82,8 @@
         "40": "tetris/player/moveDown",
         "37": "tetris/player/moveLeft",
         "39": "tetris/player/moveRight",
-        "38": "tetris/player/rotate"
+        "38": "tetris/player/rotate",
+        "32": "tetris/player/slam"
       }
     }
   },
