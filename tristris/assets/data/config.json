@@ -75,15 +75,15 @@
   "input": {
     "contexts" : {
       "running" : {
-        "83": "tetris/audio/skipSong",
-        "77": "tetris/audio/toggleMusic",
-        "80": "tetris/game/togglePause",
-        "16": "tetris/player/hold",
-        "40": "tetris/player/moveDown",
-        "37": "tetris/player/moveLeft",
-        "39": "tetris/player/moveRight",
-        "38": "tetris/player/rotate",
-        "32": "tetris/player/slam"
+        "83": "tristris/audio/skipSong",
+        "77": "tristris/audio/toggleMusic",
+        "80": "tristris/game/togglePause",
+        "16": "tristris/player/hold",
+        "40": "tristris/player/moveDown",
+        "37": "tristris/player/moveLeft",
+        "39": "tristris/player/moveRight",
+        "38": "tristris/player/rotate",
+        "32": "tristris/player/slam"
       }
     }
   },
@@ -104,8 +104,9 @@
       "assets/audio/soundtrack/13.mp3"
     ],
     "eventEffectMap" : {
-      "tetris/arena/rowsCleared": "assets/audio/effects/ticktock.wav",
-      "tetris/player/rotated" : "assets/audio/effects/blip.wav"
+      "tristris/arena/rowsCleared": "assets/audio/effects/264447__kickhat__open-button-2.wav",
+      "tristris/player/rotated" : "assets/audio/effects/73560__stanestane__blip.wav",
+      "tristris/player/slammed" : "assets/audio/effects/361636__josepharaoh99__8-bit-slam.wav"
     }
   }
 }
