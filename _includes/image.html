@@ -1,0 +1,16 @@
+{% if include.float == 'left' %}
+  {% assign style = 'float:left;margin-right:15px;' %}
+{% elsif include.float == 'right' %}
+  {% assign style = 'float:right;margin-left:15px;' %}
+{% else %}
+  {% assign style = '' %}
+{% endif %}
+
+<div>
+  <img
+    class='{{ include.class | prepend: "media media-image " }}'
+    style='{{ include.style | prepend: style }}'
+    src='{{ include.uri | prepend: site.baseurl }}'
+    alt='{{ include.alt }}'
+  >
+</div>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+
+    {% if page.carousel %}
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="{{ "/js/jquery.flexslider-min.js" | relative_url }}"></script>
+    <script src="{{ "/js/app.js" | relative_url }}"></script>
+    {% endif %}
+  </body>
+</html>

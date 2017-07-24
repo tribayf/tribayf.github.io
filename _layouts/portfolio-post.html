@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="work-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 class="work-post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h2 class="work-post-date">{{ page.date | date: "%b %Y" }}</h2>
+  </header>
+  <div class="work-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>

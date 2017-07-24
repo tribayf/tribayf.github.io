@@ -1,0 +1,54 @@
+{% if include.float == 'left' %}
+  {% assign style = 'float:left;margin-right:15px;' %}
+{% elsif include.float == 'right' %}
+  {% assign style = 'float:right;margin-left:15px;' %}
+{% else %}
+  {% assign style = '' %}
+{% endif %}
+
+{% case include.type %}
+{% when 'image' %}
+  {%
+    include image.html
+    class=include.class
+    style=style
+    uri=include.uri
+    alt=include.alt
+  %}
+{% when 'figur' %}
+  {%
+    include figure.html
+    class=include.class
+    style=style
+    uri=include.uri
+    caption=include.caption
+  %}
+{% when 'audio' %}
+  {%
+    include audio.html
+    class=include.class
+    style=style
+    uri=include.uri
+  %}
+{% when 'video' %}
+  {%
+    include video.html
+    class=include.class
+    style=style
+    uri=include.uri
+  %}
+{% when 'ytube' %}
+  {%
+    include ytube.html
+    class=include.class
+    style=style
+    uri=include.uri
+  %}
+{% when 'sndcl' %}
+  {%
+    include sndcl.html
+    class=include.class
+    style=style
+    uri=include.uri
+  %}
+{% endcase %}

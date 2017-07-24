@@ -1,0 +1,23 @@
+---
+layout: page
+title: Portfolio
+---
+
+<div class="notice">
+<p>I have much to add here. Please check back if you're interested in seeing some of the work I have done!</p>
+</div>
+
+{% assign portfolio = site.portfolio | group_by:"category" %}
+{% for category in portfolio %}
+  {% assign works = category.items | where:"draft",false %}
+  {% if works.size >0 %}
+  <div class="category">
+    <header class="category-header">
+      <h1>{{ category.name }}</h1>
+    </header>
+    {% for work in works reversed %}
+      {% include portfolio-item.html %}
+    {% endfor %}
+  </div>
+  {% endif %}
+{% endfor %}

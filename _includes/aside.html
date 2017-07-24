@@ -1,0 +1,14 @@
+{% if include.float == 'left' %}
+  {% assign style = 'float:left;margin-right:15px;' %}
+{% elsif include.float == 'right' %}
+  {% assign style = 'float:right;margin-left:15px;' %}
+{% else %}
+  {% assign style = '' %}
+{% endif %}
+
+<aside
+    class='{{ include.class | prepend: "media media-aside " }}'
+    style='{{ include.style | prepend: style }}'
+>
+  {{ include.content }}
+</aside>
