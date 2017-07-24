@@ -11,11 +11,11 @@
       {% include media.html type=work.incl.type uri=work.incl.uri alt=work.incl.alt float=work.incl.float %}
     </a>
     <p class="">
-      {{- work.content | split:'<!--more-->' | first | strip_html -}}
+      {{ work.content | split:'<!--more-->' | first | strip_html }}
       <p><a class="continue-reading" href="{{ work.url | relative_url }}">Continue Reading &#8614;</a></p>
     </p>
     {% else %}
-    {{- work.content -}}
+    {{ work.content }}
     {% endif %}
   </div>
 </section>

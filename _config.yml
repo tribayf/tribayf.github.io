@@ -45,7 +45,7 @@ defaults:
 markdown: kramdown
 exclude: [_ignore]
 
-plugins:
+plugins_dir:
   - jekyll-feed
 
 iis_slider_array: []
