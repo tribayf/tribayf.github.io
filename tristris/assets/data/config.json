@@ -1,0 +1,112 @@
+{
+  "graphics": {
+    "tetrominos": {
+      "shapes": {
+        "I": {
+          "array": [[0, 1, 0, 0],
+                    [0, 1, 0, 0],
+                    [0, 1, 0, 0],
+                    [0, 1, 0, 0]],
+          "center": {"x": 1.5, "y": 2}
+        },
+        "O": {
+          "array": [[2, 2],
+                    [2, 2]],
+          "center": {"x": 1, "y": 1}
+          },
+        "T": {
+          "array": [[0, 0, 0],
+                    [3, 3, 3],
+                    [0, 3, 0]],
+          "center": {"x": 1.5, "y": 2}
+        },
+        "J": {
+          "array": [[0, 4, 0],
+                    [0, 4, 0],
+                    [4, 4, 0]],
+          "center": {"x": 1, "y": 1.5}
+        },
+        "L": {
+          "array": [[0, 5, 0],
+                    [0, 5, 0],
+                    [0, 5, 5]],
+          "center": {"x": 2, "y": 1.5}
+        },
+        "S": {
+          "array": [[0, 0, 0],
+                    [0, 6, 6],
+                    [6, 6, 0]],
+          "center": {"x": 1.5, "y": 2}
+        },
+        "Z": {
+          "array": [[0, 0, 0],
+                    [7, 7, 0],
+                    [0, 7, 7]],
+          "center": {"x": 1.5, "y": 2}
+        }
+      },
+      "frequencies": "IIJLOSTZ",
+      "colours": [
+        "#00A4E2",
+        "#FFC749",
+        "#A44A9E",
+        "#FF7D3D",
+        "#3F4BC3",
+        "#EE202C",
+        "#18B05B"
+      ]
+    },
+    "tileScale": 36,
+    "grid": {
+      "main": {
+        "size": {
+          "w": 10,
+          "h": 20
+        }
+      },
+      "auxiliary": {
+        "size": {
+          "w": 5,
+          "h": 5
+        }
+      }
+    }
+  },
+  "input": {
+    "contexts" : {
+      "running" : {
+        "83": "audio/skipSong",
+        "77": "audio/toggleMusic",
+        "80": "game/togglePause",
+        "16": "player/hold",
+        "40": "player/moveDown",
+        "37": "player/moveLeft",
+        "39": "player/moveRight",
+        "38": "player/rotate",
+        "32": "player/slam"
+      }
+    }
+  },
+  "sound": {
+    "tracks": [
+      "assets/audio/soundtrack/01.mp3",
+      "assets/audio/soundtrack/02.mp3",
+      "assets/audio/soundtrack/03.mp3",
+      "assets/audio/soundtrack/04.mp3",
+      "assets/audio/soundtrack/05.mp3",
+      "assets/audio/soundtrack/06.mp3",
+      "assets/audio/soundtrack/07.mp3",
+      "assets/audio/soundtrack/08.mp3",
+      "assets/audio/soundtrack/09.mp3",
+      "assets/audio/soundtrack/10.mp3",
+      "assets/audio/soundtrack/11.mp3",
+      "assets/audio/soundtrack/12.mp3",
+      "assets/audio/soundtrack/13.mp3"
+    ],
+    "eventEffectMap" : {
+      "arena/rowsCleared": "assets/audio/effects/264447__kickhat__open-button-2.wav",
+      "player/rotated" : "assets/audio/effects/73560__stanestane__blip.wav",
+      "player/slammed" : "assets/audio/effects/361636__josepharaoh99__8-bit-slam.wav"
+    }
+  }
+}
