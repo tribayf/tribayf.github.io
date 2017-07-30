@@ -7,6 +7,7 @@ incl:
   type: image
   uri: /assets/portfolio/musebot-registry/musebot-registry-menu.png
   alt: Musebot Registry generated menu
+flexslider: true
 carousel:
  - image: /assets/portfolio/musebot-registry/musebot-registry-all.png
  - image: /assets/portfolio/musebot-registry/musebot-registry-add-new.png
