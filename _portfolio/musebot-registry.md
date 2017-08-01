@@ -8,7 +8,7 @@ incl:
   uri: /assets/portfolio/musebot-registry/musebot-registry-menu.png
   alt: Musebot Registry generated menu
 flexslider: true
-carousel:
+adminpanels:
  - image: /assets/portfolio/musebot-registry/musebot-registry-all.png
  - image: /assets/portfolio/musebot-registry/musebot-registry-add-new.png
  - image: /assets/portfolio/musebot-registry/musebot-registry-types.png
@@ -51,17 +51,8 @@ The Musebot Registry plugin thus enables data entry in a manner that is similar 
 
 Below are a series of screenshots for each of the administration panels exposed by the plugin. The final image shows how the data for a single Musebot is rendered for public consumption. *Note that a separate plugin called Tabby was used to wrap the individual entries in a tabs. Tabby is released by another developer and is not part of the Musebot Registry plugin.*
 
-<div class="flexslider-container">
-    <div class="flexslider">
-      <ul class="slides">
-        {% for slides in page.carousel %}
-        <li data-thumb="{{ slides.image }}">
-            <div class="slider-image">
-                <a href="{{ slides.image }}" target="_blank"><img src="{{ slides.image }}"></a>
-            </div>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <span><em>* click images to expand</em></span>
-</div>
+{%
+    include slider.html
+    name="admin-panels"
+    slides=page.adminpanels
+%}
