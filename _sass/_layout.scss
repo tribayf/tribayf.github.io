@@ -427,6 +427,26 @@ html, body {
   }
 }
 
+.media-figure {
+  margin-bottom: $spacing-unit/2;
+  font-weight: 100;
+  letter-spacing:1px;
+  img {
+    margin:0;
+    padding:0;
+  }
+  figcaption {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    padding: $spacing-unit/2;
+    padding-top: $spacing-unit/4;
+    color: $text-color-light;
+    background-color: $grey-color-dark;
+  }
+}
+
 .slider-image {
   display: table;
   height: 740px;
