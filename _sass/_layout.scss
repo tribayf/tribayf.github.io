@@ -428,12 +428,9 @@ html, body {
   font-weight: 100;
   letter-spacing:1px;
   color: $text-color-light;
-  background-color: $grey-color-dark;
-  figure a img {
-    position: relative; // needed for vertical centering jquery
-  }
+
   figcaption {
-    width: 96%;
+    background-color: $grey-color-dark;
     padding: 2%;
     p {
       margin: 0;
