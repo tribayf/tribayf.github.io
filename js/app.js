@@ -5,4 +5,9 @@ $(document).ready(function() {
     controlNav: "thumbnails",
     smoothHeight: false,
   });
+
+  $('.swipebox').swipebox({
+    removeBarsOnMobile : false,
+    hideBarsDelay : 0
+  });
 });

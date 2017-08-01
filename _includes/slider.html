@@ -3,7 +3,7 @@
   {% for slides in include.slides %}
     <li data-thumb="{{ slides.image }}">
       <figure class="slider-image media-figure">
-        <a href="{{ slides.image }}" data-lightbox="{{ include.name }}" data-title="{{ slides.desc | smartify }}" target="_blank"><img src="{{ slides.image }}"></a>
+        <a class="swipebox" href="{{ slides.image }}"  rel="{{ include.name }}" title="{{ slides.desc | smartify }}" target="_blank"><img src="{{ slides.image }}"></a>
         {% if slides.desc %}
         <figcaption class="flex-caption">{{ slides.desc | smartify }}</figcaption>
         {% endif %}
