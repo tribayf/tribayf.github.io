@@ -11,10 +11,10 @@
 {% assign src   = include.uri | prepend: site.baseurl %}
 {% assign alt   = include.alt %}
 
-<div>
+<div class='{{ class }}' style='{{ style }}'>
   {% if include.clickable == true %}
   <a href='{{ src }}' target='_blank'>
-    <img class='{{ class }}' style='{{ style }}' src='{{ src }}' alt='{{ alt }}'>
+    <img src='{{ src }}' alt='{{ alt }}'>
   </a>
   {% else %}
   <img class='{{ class }}' style='{{ style }}' src='{{ src }}' alt='{{ alt }}'>

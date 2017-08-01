@@ -6,22 +6,20 @@
   {% assign style = '' %}
 {% endif %}
 
-{% assign class = include.class | prepend: "media media-image " %}
+{% assign class = include.class | prepend: "media media-figure " %}
 {% assign style = include.style | prepend: style %}
 {% assign src   = include.uri | prepend: site.baseurl %}
 {% assign alt   = include.alt %}
 
-<figure class="media-figure">
+<figure class='{{ class }}' style='{{ style }}'>
   {% if include.clickable == true %}
   <a href='{{ src }}' target='_blank'>
-    <img class='{{ class }}' style='{{ style }}' src='{{ src }}' alt='{{ alt }}'>
+    <img src='{{ src }}' alt='{{ alt }}'>
   </a>
   {% else %}
-  <img class='{{ class }}' style='{{ style }}' src='{{ src }}' alt='{{ alt }}'>
+  <img src='{{ src }}' alt='{{ alt }}'>
   {% endif %}
   {% if include.caption %}
-  <figcaption>
-    <p>{{ include.caption }}</p>
-  </figcaption>
+  <figcaption>{{ include.caption | smartify }}</figcaption>
   {% endif %}
 </figure>
