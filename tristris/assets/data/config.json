@@ -1,89 +1,98 @@
 {
-  "graphics": {
-    "tetrominos": {
-      "shapes": {
-        "I": {
-          "array": [[0, 1, 0, 0],
-                    [0, 1, 0, 0],
-                    [0, 1, 0, 0],
-                    [0, 1, 0, 0]],
-          "center": {"x": 1.5, "y": 2}
-        },
-        "O": {
-          "array": [[2, 2],
-                    [2, 2]],
-          "center": {"x": 1, "y": 1}
-          },
-        "T": {
-          "array": [[0, 0, 0],
-                    [3, 3, 3],
-                    [0, 3, 0]],
-          "center": {"x": 1.5, "y": 2}
-        },
-        "J": {
-          "array": [[0, 4, 0],
-                    [0, 4, 0],
-                    [4, 4, 0]],
-          "center": {"x": 1, "y": 1.5}
-        },
-        "L": {
-          "array": [[0, 5, 0],
-                    [0, 5, 0],
-                    [0, 5, 5]],
-          "center": {"x": 2, "y": 1.5}
-        },
-        "S": {
-          "array": [[0, 0, 0],
-                    [0, 6, 6],
-                    [6, 6, 0]],
-          "center": {"x": 1.5, "y": 2}
-        },
-        "Z": {
-          "array": [[0, 0, 0],
-                    [7, 7, 0],
-                    [0, 7, 7]],
-          "center": {"x": 1.5, "y": 2}
-        }
+  "tetrominos": {
+    "shapes": {
+      "I": {
+        "array": [[0, 1, 0, 0],
+                  [0, 1, 0, 0],
+                  [0, 1, 0, 0],
+                  [0, 1, 0, 0]],
+        "center": {"x": 1.5, "y": 2}
       },
-      "frequencies": "IIJLOSTZ",
-      "colours": [
-        "#00A4E2",
-        "#FFC749",
-        "#A44A9E",
-        "#FF7D3D",
-        "#3F4BC3",
-        "#EE202C",
-        "#18B05B"
-      ]
+      "O": {
+        "array": [[2, 2],
+                  [2, 2]],
+        "center": {"x": 1, "y": 1}
+        },
+      "T": {
+        "array": [[0, 0, 0],
+                  [3, 3, 3],
+                  [0, 3, 0]],
+        "center": {"x": 1.5, "y": 2}
+      },
+      "J": {
+        "array": [[0, 4, 0],
+                  [0, 4, 0],
+                  [4, 4, 0]],
+        "center": {"x": 1, "y": 1.5}
+      },
+      "L": {
+        "array": [[0, 5, 0],
+                  [0, 5, 0],
+                  [0, 5, 5]],
+        "center": {"x": 2, "y": 1.5}
+      },
+      "S": {
+        "array": [[0, 0, 0],
+                  [0, 6, 6],
+                  [6, 6, 0]],
+        "center": {"x": 1.5, "y": 2}
+      },
+      "Z": {
+        "array": [[0, 0, 0],
+                  [7, 7, 0],
+                  [0, 7, 7]],
+        "center": {"x": 1.5, "y": 2}
+      }
     },
-    "tileScale": 36,
+    "frequencies": "IIJLOSTZ",
+    "colours": [
+      "#00A4E2",
+      "#FFC749",
+      "#A44A9E",
+      "#FF7D3D",
+      "#3F4BC3",
+      "#EE202C",
+      "#18B05B"
+    ]
+  },
+  "graphics": {
+    "canvas": {
+      "id": "game-canvas",
+      "relativeSize": { "w": 0.75, "h": 0.90 }
+    },
     "grid": {
       "main": {
-        "size": {
-          "w": 10,
-          "h": 20
-        }
+        "size": { "w": 10, "h": 20 }
       },
-      "auxiliary": {
-        "size": {
-          "w": 5,
-          "h": 5
-        }
+      "held": {
+        "size": { "w": 5,  "h": 5 }
+      },
+      "next": {
+        "size": { "w": 5,  "h": 5 }
       }
-    }
+    },
+    "tileScale": 36
   },
   "input": {
     "contexts" : {
-      "running" : {
+      "title" : {
+        "13": "game/start",
+        "27": "game/exitToTitle"
+      },
+      "game" : {
         "83": "audio/skipSong",
         "77": "audio/toggleMusic",
-        "80": "game/togglePause",
+        "80": "game/pause",
+        "27": "game/exitToTitle",
         "16": "player/hold",
         "40": "player/moveDown",
         "37": "player/moveLeft",
         "39": "player/moveRight",
         "38": "player/rotate",
         "32": "player/slam"
+      },
+      "pause" : {
+        "80": "game/unpause"
       }
     }
   },
