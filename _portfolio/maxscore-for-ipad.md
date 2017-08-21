@@ -107,7 +107,7 @@ The next set of images compares the rending between MaxScore and MaxScore for iP
 
 This was one of the most challenging projects I have taken on to date. Not least of the challenges encountered was all of the learning that I had to do. In pretty much every aspect of the work, I was starting out fresh, without any prior knowledge of what is needed to develop a software package that operates across multiple platforms requiring the use of several programming languages (namely Max's graphical, object based language; JavaScript for parts of the server's interface; and Objective-C for the iPads), and incorporates both client- and serve-side network programming, XML parsing, and advanced use of fonts (i.e. music fonts) in conjunction with 2D graphics programming. On top of everything, the software had to efficiently and reliably get the music to the musicians, while rendering the music correctly and legibly.
 
-Needless to say, I learned a ton. The project was large enough that I had to really persevere to get it done, but I finished, and I am glad to now be able to share my work with interested people. Of course, I am also happy to have seen it used in two performance before large audiences!
+Needless to say, I learned a ton. The project was large enough that I had to really persevere to get it done, but I finished, and I am glad to now be able to share my work with interested people. Of course, I am also happy to have seen it used in two performances before large audiences!
 
 If you have stuck with my article this far I would like to thank you for reading through. It was difficult to keep it both short and informative. If you have any questions regarding something that was not addressed above, please feel free to contact me.
 
