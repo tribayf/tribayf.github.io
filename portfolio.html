@@ -9,7 +9,7 @@ title: Portfolio
 
 {% assign portfolio = site.portfolio | sort:"category" | group_by:"category" %}
 {% for category in portfolio reversed %}
-  {% assign works = category.items | where:"draft",false %}
+  {% assign works = category.items | where:"draft",false | sort:'date' %}
   {% if works.size > 0 %}
   <div class="category">
     <header class="category-header">
