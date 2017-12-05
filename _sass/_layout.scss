@@ -237,48 +237,6 @@ html, body {
   }
 }
 
-.post-header {
-  margin-bottom:$spacing-unit;
-}
-
-.post-title {
-  font-size:42px;
-  letter-spacing:-1px;
-  line-height:1;
-
-  @include media-query($on-laptop) {
-      font-size:36px;
-  }
-}
-
-.post-content {
-  margin-bottom:$spacing-unit;
-
-  h2 {
-    font-size:32px;
-
-    @include media-query($on-laptop) {
-      font-size:28px;
-    }
-  }
-
-  h3 {
-    font-size:26px;
-
-    @include media-query($on-laptop) {
-      font-size:22px;
-    }
-  }
-
-  h4 {
-    font-size:20px;
-
-    @include media-query($on-laptop) {
-      font-size:18px;
-    }
-  }
-}
-
 .welcome {
   padding:2rem;
   color:$grey-color-dark;
@@ -294,6 +252,120 @@ html, body {
     margin-left:auto !important;
     margin-right:auto !important;
     margin-bottom:$spacing-unit !important;
+  }
+}
+
+.post-list {
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.post-item {
+  margin-bottom:$spacing-unit/2;
+  background-color:$grey-color-dark;
+  color:$text-color-light;
+  padding: 0;
+
+  header {
+    display:flex;
+    flex-wrap:no-wrap;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    // justify-content: flex-end;
+    align-items:flex-start;
+
+    padding-top:$spacing-unit/2;
+    padding-left:$spacing-unit/2;
+
+    .post-title,
+    .post-date {
+      background-color:$text-color-light;
+      color:$text-color;
+      margin-bottom:$spacing-unit/2;
+      margin-right:$spacing-unit/2;
+      padding:0px $spacing-unit/2;
+    }
+
+    .post-link {
+      display: inline !important;
+      color: $grey-color-dark;
+    }
+
+    .post-title {
+      font-weight: $base-font-weight;
+      font-size:1.20*$base-font-size;
+      width: 100%;
+    }
+
+    .post-date {
+      font-weight:0.75*$base-font-weight;
+      font-size:$base-font-size;
+      text-aligh: right;
+      min-width: 95px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    header {
+      // flex:none;
+      flex-wrap:wrap-reverse;
+      flex-direction: row-reverse;
+
+      align-items:baseline;
+      .post-title,
+      .post-date {
+        font-size:$base-font-size;
+      }
+    }
+  }
+}
+
+.post {
+  margin-bottom:$spacing-unit/2;
+  color:$grey-color-dark;
+  padding: 0;
+
+  header {
+    display:flex;
+    flex-wrap:no-wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    .post-title,
+    .post-date {
+      background-color:$text-color-light;
+    }
+
+    .post-link {
+      display: inline !important;
+    }
+
+    .post-title {
+      font-weight: $base-font-weight;
+    }
+
+    .post-date {
+      font-weight:0.75*$base-font-weight;
+      font-size:1.20*$base-font-size;
+      text-align: right;
+      min-width: 110px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    header {
+      flex-wrap:wrap;
+      align-items:flex-start;
+
+      align-items:baseline;
+      .post-title,
+      .post-date {
+        font-size:$base-font-size;
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -314,7 +386,7 @@ html, body {
     }
 }
 
-.work-item {
+.portfolio-work {
 
   margin-bottom:$spacing-unit;
   padding:$spacing-unit;
@@ -327,21 +399,19 @@ html, body {
     justify-content:space-between;
     align-items:center;
 
-    // padding-bottom:$spacing-unit/2;
-
-    .work-item-title,
-    .work-item-date {
+    .work-title,
+    .work-date {
       background-color:$text-color-light;
       color:$text-color;
       padding:0px 10px;
     }
 
-    .work-post-link {
+    .work-link {
       display: inline !important;
       color: $grey-color-dark;
     }
 
-    .work-item-date {
+    .work-date {
       font-weight:0.75*$base-font-weight;
       font-size:1.20*$base-font-size;
     }
@@ -353,39 +423,11 @@ html, body {
   }
 
   a {
-    color: $brand-color-light;//$grey-color-light;
+    color: $brand-color-light;
     letter-spacing:0px;
   }
 
   @extend %clearfix;
-}
-
-.work-post {
-
-  color:$text-color;
-  margin-bottom:$spacing-unit;
-
-  header {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-items:center;
-    padding-bottom:$spacing-unit/2;
-
-    .work-post-title,
-    .work-post-date {
-      color: $grey-color-dark;
-    }
-
-    .work-post-title {
-      font-weight: $base-font-weight;
-    }
-
-    .work-post-date {
-      font-weight:0.75*$base-font-weight;
-      font-size:1.20*$base-font-size;
-    }
-  }
 }
 
 .media-image {
@@ -404,7 +446,6 @@ html, body {
   border: solid $grey-color-light 1px;
   box-shadow: 5px 5px 5px #888888;
 }
-
 
 .media-ytube {
     /* applied to parent in media.html: */

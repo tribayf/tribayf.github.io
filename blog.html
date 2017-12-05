@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+---
+
+<div class="home">
+  {% assign posts = site.posts | where:"draft",false %}
+  {% if posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in posts %}
+      <li>{% include blog-item.html %}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="text-align:center;padding:10px;">Nothing to see here yet.</p>
+  {% endif %}
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+</div>

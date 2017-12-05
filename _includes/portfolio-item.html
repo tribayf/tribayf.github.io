@@ -1,9 +1,9 @@
-<section class="work-item" itemscope itemtype="https://schema.org/CreativeWork">
+<section class="portfolio-work" itemscope itemtype="https://schema.org/CreativeWork">
   <header>
-    <h2 class="work-item-title" itemprop="name headline">
-      <a class="work-post-link" href="{{ work.url | relative_url }}">{{ work.title | escape }}</a>
+    <h2 class="work-title" itemprop="name headline">
+      <a class="work-link" href="{{ work.url | relative_url }}">{{ work.title | escape }}</a>
     </h2>
-    <h3 class="work-item-date">{{ work.date | date: "%b %Y" }}</h3>
+    <h3 class="work-date">{{ work.date | date: "%b %Y" }}</h3>
   </header>
   <div class="work-content" itemprop="about">
     {% if work.content contains '<!--more-->' %}
