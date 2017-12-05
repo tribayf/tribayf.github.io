@@ -133,7 +133,7 @@ html, body {
 
 @include media-query($on-palm) {
   .contact-list {
-    flex-direction:column;
+    align-items: center;
   }
   .contact {
     width:        calc(50%);
@@ -141,8 +141,8 @@ html, body {
     padding-left:        calc($spacing-unit/2);
     padding-left:-webkit-calc($spacing-unit/2);
   }
-  .contact:nth-child(0) {
-    flex-grow:1;
+  .contact:nth-child(1) {
+    visibility: collapse !important;
   }
 }
 
