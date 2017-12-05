@@ -20,6 +20,7 @@ url: "https://tribayf.github.io" # the base hostname & protocol for your site, e
 permalink: pretty
 
 # Contact
+author: Tristan Bayfield
 email: tristan&#x2e;bayfield&#064;sfu&#x2e;ca
 github_username: tribayf
 bitbucket_username: tribayf
@@ -45,8 +46,9 @@ defaults:
 markdown: kramdown
 exclude: [_ignore]
 
-plugins_dir:
+plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 iis_slider_array: []
 
