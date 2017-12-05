@@ -3,10 +3,6 @@ layout: page
 title: Portfolio
 ---
 
-<div class="notice">
-<p style="text-align:center;">Thanks for checking out my portfolio! From time to time I add new entries, so please check back occasionally to see more, and do not hesitate to contact me if you have any questions!</p>
-</div>
-
 {% assign portfolio = site.portfolio | sort:"category" | group_by:"category" %}
 {% for category in portfolio reversed %}
   {% assign works = category.items | where:"draft",false | sort:'date' %}
