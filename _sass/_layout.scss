@@ -479,3 +479,12 @@ html, body {
     }
   }
 }
+
+table.bibliography {
+  tr > th {
+    vertical-align: top;
+    text-aling: left;
+    font-weight: $base-font-weight;
+    padding-right: 0.5rem;
+  }
+}

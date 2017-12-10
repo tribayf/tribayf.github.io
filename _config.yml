@@ -35,12 +35,18 @@ collections:
     permalink: /:collection/:title/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: portfolio
     values:
       layout: portfolio-post
+
+scholar:
+  style: ieee-with-url
+  use_raw_bibtex_entry: true
+  bibliography_template: bib
+  bibliography_list_tag: table
+  bibliography_item_tag: tr
 
 # Build settings
 markdown: kramdown
@@ -48,7 +54,9 @@ exclude: [_ignore]
 
 plugins:
   - jekyll-feed
+  - jekyll-scholar
   - jekyll-seo-tag
+  - replace_regex
 
 iis_slider_array: []
 
