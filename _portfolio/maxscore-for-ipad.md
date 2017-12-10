@@ -51,19 +51,19 @@ comparisons:
 
 ### Introduction
 
-One of the largest projects I've worked on to date, MaxScore for iPad is a software package developed for realtime distribution of musical scores to musicians for live performance. It was commissioned by Dr. Arne Eigenfeldt for use in his research in [Music for Humans by Machine](https://aeigenfeldt.wordpress.com/music-for-humans-by-machine/){:target='_blank'}.
+One of the largest projects I've worked on to date, MaxScore for iPad is a software package developed for realtime distribution of musical scores to musicians for live performance. It was commissioned by Dr. Arne Eigenfeldt for use in his research in [Music for Humans by Machine](https://aeigenfeldt.wordpress.com/music-for-humans-by-machine/).
 
 MaxScore for iPad has been used in two performances of Dr. Eigenfelt's *An Unnatural Selection*. The first was by Vancouver's Turning Point Ensemble May 2, 2014 at SFU Woodwards in Vancouver, and the second at Sound and Music Computing in Hamburg, August 2016, as part of the S.T.R.E.A.M. Festival at Kampnagel.
 
 Video links:
-- [Turning Point Ensemble](https://www.youtube.com/watch?v=ILL-eDwdnDg){:target="_blank"}
-- [S.T.R.E.A.M. Festival](https://youtu.be/kZ9JvmS9Tno){:target="_blank"}
+- [Turning Point Ensemble](https://www.youtube.com/watch?v=ILL-eDwdnDg)
+- [S.T.R.E.A.M. Festival](https://youtu.be/kZ9JvmS9Tno)
 
 ### Technical Explanation
 
 MaxScore for iPad comprises two components: a server for transmitting scores to musicians via network connection, and an iPad application for rendering scores to screen as they are received. That's the *TL;DR*, anyhow. The long explanation follows, but first I want to clear up a potential point of confusion:
 
-There are three things that I am going to refer to with "Max" in their name. First is [Max](https://cycling74.com/){:target="_blank"} (also known as Max/MSP), a graphical environment for multimedia programming. Second is [MaxScore](http://www.computermusicnotation.com/){:target='_blank'}, a music notation package that facilities musical score creation within Max. Finally, there is my work, <span style="color:black; font-weight:400;">MaxScore for iPad</span>---not officially a part of MaxScore, but named for it because MaxScore for iPad understands a subset of the MaxScore's native XML format---more on this later. So, yes, those are the three things with "Max" in their name, and hopefully I've cleared up any potential for confusion. Okay, on with the explaining!
+There are three things that I am going to refer to with "Max" in their name. First is [Max](https://cycling74.com/) (also known as Max/MSP), a graphical environment for multimedia programming. Second is [MaxScore](http://www.computermusicnotation.com/), a music notation package that facilities musical score creation within Max. Finally, there is my work, <span style="color:black; font-weight:400;">MaxScore for iPad</span>---not officially a part of MaxScore, but named for it because MaxScore for iPad understands a subset of the MaxScore's native XML format---more on this later. So, yes, those are the three things with "Max" in their name, and hopefully I've cleared up any potential for confusion. Okay, on with the explaining!
 
 {%
     include figure.html

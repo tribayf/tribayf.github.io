@@ -24,7 +24,7 @@ NMP performed a piece incorporating contemporary dance, projection mapping, and,
 
 <br>
 
-Poster and ticket design by NMP member, [Vanessa Krystin Wong](https://www.behance.net/vanessakrystinwong){:target='_blank'}.
+Poster and ticket design by NMP member, [Vanessa Krystin Wong](https://www.behance.net/vanessakrystinwong).
 
 {%
     include image.html

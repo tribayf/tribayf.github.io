@@ -123,6 +123,9 @@ GEM
       rouge (~> 2)
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
+    jekyll-extlinks (0.0.4)
+      jekyll (~> 3.0)
+      nokogiri (~> 1.6)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-gist (1.4.1)
@@ -272,6 +275,7 @@ DEPENDENCIES
   escape_utils
   github-linguist
   github-pages
+  jekyll-extlinks
   jekyll-feed (~> 0.6)
   jekyll-scholar
   replace_regex

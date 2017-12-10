@@ -41,6 +41,9 @@ defaults:
     values:
       layout: portfolio-post
 
+extlinks:
+  attributes: { target: _blank }
+
 scholar:
   style: ieee-with-url
   use_raw_bibtex_entry: true
@@ -53,6 +56,7 @@ markdown: kramdown
 exclude: [_ignore]
 
 plugins:
+  - jekyll-extlinks
   - jekyll-feed
   - jekyll-scholar
   - jekyll-seo-tag

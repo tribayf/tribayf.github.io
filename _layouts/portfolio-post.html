@@ -7,6 +7,6 @@ layout: default
     <h3 class="post-date">{{ page.date | date: "%b %Y" }}</h3>
   </header>
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {{ content | extlinks }}
   </div>
 </article>

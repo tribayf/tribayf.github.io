@@ -22,7 +22,7 @@ adminpanels:
     alt=page.incl.alt
 %}
 
-A WordPress plugin, commissioned by [Musical Metacreation (MuMe)](http://musicalmetacreation.org/){:target='_blank'} for tracking and publishing information about MuMe hosted Musebots.<!--more-->
+A WordPress plugin, commissioned by [Musical Metacreation (MuMe)](http://musicalmetacreation.org/) for tracking and publishing information about MuMe hosted Musebots.<!--more-->
 
 {%
     include aside.html
