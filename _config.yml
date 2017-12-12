@@ -8,6 +8,17 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Build settings
+markdown: kramdown
+exclude: [_ignore]
+
+plugins:
+  - jekyll-extlinks
+  - jekyll-feed
+  - jekyll-scholar
+  - jekyll-seo-tag
+  - replace_regex
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -51,16 +62,11 @@ scholar:
   bibliography_list_tag: table
   bibliography_item_tag: tr
 
-# Build settings
-markdown: kramdown
-exclude: [_ignore]
-
-plugins:
-  - jekyll-extlinks
-  - jekyll-feed
-  - jekyll-scholar
-  - jekyll-seo-tag
-  - replace_regex
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 iis_slider_array: []
 

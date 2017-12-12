@@ -7,4 +7,7 @@
   <link rel="stylesheet" href="{{ "/css/flexslider.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/swipebox.css" | prepend: site.baseurl }}">
   <link rel="icon" type="image/png" href="{{ '/assets/img/t.png' |  prepend: site.url }}">
+  {%- if page.equations -%}
+  {% include mathjax.html %}
+  {%- endif -%}
 </head>
