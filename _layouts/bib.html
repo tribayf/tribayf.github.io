@@ -1,7 +1,10 @@
 ---
 ---
-{% if site.scholar.style == "ieee-with-url" %}
-  <th>[{{ index }}]</th>
+{% if site.scholar.style == 'ieee-with-url' %}
+  {% assign tokens = reference | split: '[' %}
+  {% assign tokens = tokens[1] | split: ']' %}
+  {% assign citeno = tokens[0] %}
+  <th>[{{ citeno }}]</th>
   <td>{{ reference | replace_regex: '(\[\d+\])', '' | markdownify }}</td>
 {% else %}
 {{ reference }}
