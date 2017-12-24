@@ -5,38 +5,38 @@ draft: false
 category: Programming
 incl:
   type: image
-  uri: /assets/portfolio/maxscore-for-ipad/an-unnatarual-selection.jpg
+  uri: /assets/img/portfolio/maxscore-for-ipad/an-unnatarual-selection.jpg
   alt: Musicians playing first act of An Unnatural Selection
 flexslider: true
 clientserver:
-- image: /assets/portfolio/maxscore-for-ipad/client-server/before-connecting.png
+- image: /assets/img/portfolio/maxscore-for-ipad/client-server/before-connecting.png
   desc: "Prior to connecting iPad client to server"
-- image: /assets/portfolio/maxscore-for-ipad/client-server/after-connecting.png
+- image: /assets/img/portfolio/maxscore-for-ipad/client-server/after-connecting.png
   desc: "After connecting, the server's UI provides feedback indicating that user \"Clarinet\" has connected."
-- image: /assets/portfolio/maxscore-for-ipad/client-server/after-sending-score.png
+- image: /assets/img/portfolio/maxscore-for-ipad/client-server/after-sending-score.png
   desc: "After sending a score to the iPad"
-- image: /assets/portfolio/maxscore-for-ipad/client-server/after-booting.png
+- image: /assets/img/portfolio/maxscore-for-ipad/client-server/after-booting.png
   desc: "After booting all connected iPads"
 comparisons:
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/dots-and-beams-ms.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/dots-and-beams-ms.png
   desc: "Dots and beams in MaxScore"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/dots-and-beams-ipad.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/dots-and-beams-ipad.png
   desc: "Dots and beams in MaxScore for iPad"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/enharmonic-spell-ms.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/enharmonic-spell-ms.png
   desc: "Enharmonic spellings in MaxScore"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/enharmonic-spell-ipad.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/enharmonic-spell-ipad.png
   desc: "Enharmonic spellings in MaxScore for iPad"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/keysig-accidentals-ms.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/keysig-accidentals-ms.png
   desc: "Key signatures and accidentals in MaxScore"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/keysig-accidentals-ipad.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/keysig-accidentals-ipad.png
   desc: "Key signatures and accidentals in MaxScore for iPad"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/ties-slurs-01-ms.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/ties-slurs-01-ms.png
   desc: "Ties and slurs in MaxScore"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/ties-slurs-01-ipad.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/ties-slurs-01-ipad.png
   desc: "Ties and slurs in MaxScore for iPad"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/ties-slurs-02-ms.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/ties-slurs-02-ms.png
   desc: "More ties and slurs in MaxScore"
-- image: /assets/portfolio/maxscore-for-ipad/comparisons/ties-slurs-02-ipad.png
+- image: /assets/img/portfolio/maxscore-for-ipad/comparisons/ties-slurs-02-ipad.png
   desc: "More ties and slurs in MaxScore for iPad"
 ---
 
@@ -67,7 +67,7 @@ There are three things that I am going to refer to with "Max" in their name. Fir
 
 {%
     include figure.html
-    uri='/assets/portfolio/maxscore-for-ipad/system-organization.svg'
+    uri='/assets/img/portfolio/maxscore-for-ipad/system-organization.svg'
     alt='component diagram'
     clickable=true
     caption="System diagram"

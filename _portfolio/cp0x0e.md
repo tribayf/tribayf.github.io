@@ -5,7 +5,7 @@ draft: false
 category: Music
 incl:
   type: image
-  uri: /assets/portfolio/cp0x0e/GESMIsmall-262x300.jpg
+  uri: /assets/img/portfolio/cp0x0e/GESMIsmall-262x300.jpg
   alt: CP0x0e album artwork
   float: right
 ---

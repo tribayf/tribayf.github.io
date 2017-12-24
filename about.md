@@ -3,7 +3,7 @@ layout: page
 title: About Me
 incl:
   type: image
-  uri: /assets/img/headshot.jpg
+  uri: /assets/img/site/headshot.jpg
   alt: Headshot
 ---
 

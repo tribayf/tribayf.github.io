@@ -5,15 +5,15 @@ draft: false
 category: Programming
 incl:
   type: image
-  uri: /assets/portfolio/musebot-registry/musebot-registry-menu.png
+  uri: /assets/img/portfolio/musebot-registry/musebot-registry-menu.png
   alt: Musebot Registry generated menu
 flexslider: true
 adminpanels:
- - image: /assets/portfolio/musebot-registry/musebot-registry-all.png
- - image: /assets/portfolio/musebot-registry/musebot-registry-add-new.png
- - image: /assets/portfolio/musebot-registry/musebot-registry-types.png
- - image: /assets/portfolio/musebot-registry/musebot-registry-settings.png
- - image: /assets/portfolio/musebot-registry/musebot-registry-table.png
+ - image: /assets/img/portfolio/musebot-registry/musebot-registry-all.png
+ - image: /assets/img/portfolio/musebot-registry/musebot-registry-add-new.png
+ - image: /assets/img/portfolio/musebot-registry/musebot-registry-types.png
+ - image: /assets/img/portfolio/musebot-registry/musebot-registry-settings.png
+ - image: /assets/img/portfolio/musebot-registry/musebot-registry-table.png
 ---
 
 {%

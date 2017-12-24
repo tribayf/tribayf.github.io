@@ -5,7 +5,7 @@ draft: false
 category: Programming
 incl:
   type: image
-  uri: /assets/portfolio/tristris/tristris.png
+  uri: /assets/img/portfolio/tristris/tristris.png
   alt: tristris title screen
 ---
 
