@@ -326,6 +326,10 @@ html, body {
   color:$grey-color-dark;
   padding: 0;
 
+  h3 {
+    font-style: italic;
+  }
+
   header {
     display:flex;
     flex-wrap:no-wrap;
