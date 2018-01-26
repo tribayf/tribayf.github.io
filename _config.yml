@@ -17,6 +17,7 @@ plugins:
   - jekyll-feed
   - jekyll-scholar
   - jekyll-seo-tag
+  - jekyll-sitemap
   - replace_regex
 
 # Site settings

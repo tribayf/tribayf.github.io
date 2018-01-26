@@ -279,6 +279,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-relative-links
   jekyll-scholar
+  jekyll-sitemap
   replace_regex
   sanitize
 

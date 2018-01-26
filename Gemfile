@@ -20,11 +20,12 @@ gem 'github-pages', group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'escape_utils'
+  gem 'github-linguist'
   gem 'jekyll-extlinks'
   gem 'jekyll-feed', '~> 0.6'
-  gem 'github-linguist'
   gem 'jekyll-relative-links'
   gem 'jekyll-scholar'
+  gem 'jekyll-sitemap'
   gem 'replace_regex'
   gem 'sanitize'
 end
