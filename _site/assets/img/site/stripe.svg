@@ -1,7 +1,0 @@
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <g transform="translate(0,-952.36223)">
-    <path style="fill:#2a7ae2;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" d="M 0 0 L 0 50 L 50 100 L 100 100 L 0 0 z " transform="translate(0,952.36223)" />
-    <path style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 0,952.36223 99.999999,99.99997 0,-99.99997 -99.999999,0 z" />
-    <path style="fill:#2a7ae2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 49.999999,952.36223 50,49.99997 0,-49.99997 -50,0 z" />
-  </g>
-</svg>

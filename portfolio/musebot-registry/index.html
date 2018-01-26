@@ -5,17 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Blog | Tristan Bayfield</title>
-<meta property="og:title" content="Blog" />
+<title>Musebot Registry | Tristan Bayfield</title>
+<meta property="og:title" content="Musebot Registry" />
 <meta name="author" content="Tristan Bayfield" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A site to showcase some of my work." />
 <meta property="og:description" content="A site to showcase some of my work." />
-<link rel="canonical" href="https://tribayf.github.io/blog" />
-<meta property="og:url" content="https://tribayf.github.io/blog" />
+<link rel="canonical" href="https://tribayf.github.io/portfolio/musebot-registry/" />
+<meta property="og:url" content="https://tribayf.github.io/portfolio/musebot-registry/" />
 <meta property="og:site_name" content="Tristan Bayfield" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-10-01T00:00:00-07:00" />
 <script type="application/ld+json">
-{"publisher":null,"author":{"@type":"Person","name":"Tristan Bayfield"},"url":"https://tribayf.github.io/blog","description":"A site to showcase some of my work.","headline":"Blog","dateModified":null,"datePublished":null,"name":null,"sameAs":null,"@type":"WebPage","mainEntityOfPage":null,"image":null,"@context":"http://schema.org"}</script>
+{"publisher":null,"author":{"@type":"Person","name":"Tristan Bayfield"},"url":"https://tribayf.github.io/portfolio/musebot-registry/","description":"A site to showcase some of my work.","headline":"Musebot Registry","dateModified":"2016-10-01T00:00:00-07:00","datePublished":"2016-10-01T00:00:00-07:00","name":null,"sameAs":null,"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tribayf.github.io/portfolio/musebot-registry/"},"image":null,"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/css/main.css">
@@ -40,7 +42,7 @@
     
     <a class="nav-link " href="/about">About Me</a>
     
-    <a class="nav-link current" href="/blog">Blog</a>
+    <a class="nav-link " href="/blog">Blog</a>
     
     <a class="nav-link " href="/portfolio">Portfolio</a>
     
@@ -52,27 +54,91 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-  
-  
-  <ul class="post-list">
-    
-      <li>
-<section class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h2 class="post-title" itemprop="name headline">
-      <a class="post-link" href="/blog/2018/01/std-lower-bound">Exploring C++ Part 1: std::lower_bound</a>
-    </h2>
-    <h3 class="post-date">Jan 25, 2018</h3>
+    <h2 class="post-title" itemprop="name headline">Musebot Registry</h2>
+    <h3 class="post-date">Oct 2016</h3>
   </header>
-</section>
-</li>
+  <div class="post-content" itemprop="articleBody">
     
-  </ul>
+<div class="media media-image " style="">
   
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+  <img class="media media-image " style="" src="/assets/img/portfolio/musebot-registry/musebot-registry-menu.png" alt="Musebot Registry generated menu">
+  
 </div>
 
+<p>A WordPress plugin, commissioned by <a href="http://musicalmetacreation.org/" target="_blank">Musical Metacreation (MuMe)</a> for tracking and publishing information about MuMe hosted Musebots.<!--more--></p>
+
+<aside class="media media-aside " style="text-align:left;float:right;margin-right:0px;width:33%;">
+  <p><em>What is a Musebot, you ask?</em> Musebots are networked software agents that collaborate in ensembles to produce music together in real time. Each bot performs a particular task in the effort, where they come together in an emergent fashion. It’s all very exciting and you can learn more about them <a href="http://musicalmetacreation.org/musebots/" target="_blank">here!</a></p>
+
+</aside>
+
+<p>This represents one of my best attempts at writing professional grade software—designed to meet the client’s needs while keeping future developers in mind.</p>
+
+<p><strong>Feature Summary</strong></p>
+
+<ul>
+  <li>A Musebot custom post type</li>
+  <li>A Musebot custom taxonomy</li>
+  <li>Dynamic navigation menu generation</li>
+  <li>Permalink management</li>
+  <li>Custom admin panels and webforms for data entry</li>
+  <li>A modular, object-oriented design built for extension</li>
+</ul>
+
+<p>The plugin provides a solution to a problem the client was facing, namely the need for a central data store, a convenient and easy to use interface for data entry, automated publishing, and an effective means to browse published data in a way that would help promote and spread knowledge of the project’s existence.</p>
+
+<p>As MuMe were already using WordPress—full featured and extensible blogging software that utilizes the MySQL database management system—a WordPress plugin was a natural fit: make use of software that had already been adopted, and build off of current, familiar workflows without introducing unnecessary complexity.</p>
+
+<p>The Musebot Registry plugin thus enables data entry in a manner that is similar to creating a new blog post or page. It provides a custom interface that constrains what information may be entered, helping maintain data consistency and avoiding introduction of errors. As Musebots naturally fall into taxonomic categories, a custom taxonomy provides the ability to tag them with the appropriate term. Once a Musebot entry is created, its data is saved to WordPress’ database and published to the website. To aid in discovery, a public facing navigation menu is dynamically populated with the available taxa (see image above), each leading site visitors to a view of all Musebots tagged with the respective term.</p>
+
+<p>Below are a series of screenshots for each of the administration panels exposed by the plugin. The final image shows how the data for a single Musebot is rendered for public consumption. <em>Note that a separate plugin called Tabby was used to wrap the individual entries in a tabs. Tabby is released by another developer and is not part of the Musebot Registry plugin.</em></p>
+
+<div class="flexslider">
+  <ul class="slides">
+  
+    <li data-thumb="/assets/img/portfolio/musebot-registry/musebot-registry-all.png">
+      <figure class="slider-image media-figure">
+        <a class="swipebox" href="/assets/img/portfolio/musebot-registry/musebot-registry-all.png" rel="admin-panels" title="" target="_blank"><img src="/assets/img/portfolio/musebot-registry/musebot-registry-all.png"></a>
+        
+      </figure>
+    </li>
+  
+    <li data-thumb="/assets/img/portfolio/musebot-registry/musebot-registry-add-new.png">
+      <figure class="slider-image media-figure">
+        <a class="swipebox" href="/assets/img/portfolio/musebot-registry/musebot-registry-add-new.png" rel="admin-panels" title="" target="_blank"><img src="/assets/img/portfolio/musebot-registry/musebot-registry-add-new.png"></a>
+        
+      </figure>
+    </li>
+  
+    <li data-thumb="/assets/img/portfolio/musebot-registry/musebot-registry-types.png">
+      <figure class="slider-image media-figure">
+        <a class="swipebox" href="/assets/img/portfolio/musebot-registry/musebot-registry-types.png" rel="admin-panels" title="" target="_blank"><img src="/assets/img/portfolio/musebot-registry/musebot-registry-types.png"></a>
+        
+      </figure>
+    </li>
+  
+    <li data-thumb="/assets/img/portfolio/musebot-registry/musebot-registry-settings.png">
+      <figure class="slider-image media-figure">
+        <a class="swipebox" href="/assets/img/portfolio/musebot-registry/musebot-registry-settings.png" rel="admin-panels" title="" target="_blank"><img src="/assets/img/portfolio/musebot-registry/musebot-registry-settings.png"></a>
+        
+      </figure>
+    </li>
+  
+    <li data-thumb="/assets/img/portfolio/musebot-registry/musebot-registry-table.png">
+      <figure class="slider-image media-figure">
+        <a class="swipebox" href="/assets/img/portfolio/musebot-registry/musebot-registry-table.png" rel="admin-panels" title="" target="_blank"><img src="/assets/img/portfolio/musebot-registry/musebot-registry-table.png"></a>
+        
+      </figure>
+    </li>
+  
+  </ul>
+</div>
+
+
+  </div>
+</article>
 
       </div>
     </div>
@@ -102,6 +168,11 @@
   </div>
 </footer>
 
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.min.js"></script>
+    <script src="/js/jquery.swipebox.min.js"></script>
+    <script src="/js/app.js"></script>
     
   </body>
 </html>
