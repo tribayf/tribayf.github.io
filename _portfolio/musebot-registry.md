@@ -27,9 +27,8 @@ A WordPress plugin, commissioned by [Musical Metacreation (MuMe)](http://musical
 {%
     include aside.html
     float="right"
-    style="text-align:left;width:33%"
-    content="
-    <em>What is a Musebot, you ask?</em> Musebots are networked software agents that collaborate in ensembles to produce music together in real time. Each bot performs a particular task in the effort, where they come together in an emergent fashion. It's all very exciting and you can learn more about them <a href='http://musicalmetacreation.org/musebots/' target='_blank'>here!</a>"
+    style="text-align:left;"
+    content="*What is a Musebot, you ask?* Musebots are networked software agents that collaborate in ensembles to produce music together in real time. Each bot performs a particular task in the effort, where they come together in an emergent fashion. It's all very exciting and you can learn more about them [here!](http://musicalmetacreation.org/musebots/)"
 %}
 
 This represents one of my best attempts at writing professional grade software---designed to meet the client's needs while keeping future developers in mind.

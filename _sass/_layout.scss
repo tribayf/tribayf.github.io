@@ -442,13 +442,18 @@ html, body {
 }
 
 .media-aside {
-  width:30%;
+  width:auto;
   display: inline-block;
-  margin: 0px 0px 0px $spacing-unit/2;
+  // margin: 0px 0px 0px $spacing-unit/2;
+  margin: 0px 15px 15px $spacing-unit/2;
   padding: $spacing-unit/2;
   text-align: justify;
   border: solid $grey-color-light 1px;
   box-shadow: 5px 5px 5px #888888;
+  *:last-child {
+    text-align: inherit;
+    margin-bottom: 0;
+  }
 }
 
 .media-ytube {
