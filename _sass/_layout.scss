@@ -272,7 +272,6 @@ html, body {
     flex-wrap:no-wrap;
     flex-direction: row-reverse;
     justify-content:space-between;
-    // justify-content: flex-end;
     align-items:flex-start;
 
     padding-top:$spacing-unit/2;
@@ -308,7 +307,6 @@ html, body {
 
   @include media-query($on-palm) {
     header {
-      // flex:none;
       flex-wrap:wrap-reverse;
       flex-direction: row-reverse;
 
@@ -444,7 +442,6 @@ html, body {
 .media-aside {
   width:auto;
   display: inline-block;
-  // margin: 0px 0px 0px $spacing-unit/2;
   margin: 0px 15px 15px $spacing-unit/2;
   padding: $spacing-unit/2;
   text-align: justify;
