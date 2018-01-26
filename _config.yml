@@ -28,7 +28,7 @@ title: Tristan Bayfield
 description: A site to showcase some of my work.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tribayf.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: pretty
+permalink: /blog/:year/:month/:title
 
 # Contact
 author: Tristan Bayfield
