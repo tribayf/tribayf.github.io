@@ -98,7 +98,7 @@ Here, our call to `lower_bound` returned an iterator pointing to the 7th element
 
 To further illustrate the algorithm's behaviour, suppose that we run the it again with all the 4's of the input range changed to 5's, and with the search key left unchanged. We would again receive an iterator pointing to the 7th element, which would still be the first element not preceding a value of 4, but it would instead have a value of 5. If we subsequently run the algorithm with a search key greater than 6, we would receive an iterator pointing to `last`. Such is the behaviour of `lower_bound`.
 
-(See this [graphic]({{- "/assets/img/blog/2018-01-25-std-lower-bound.png" | absolute_url -}}) for a visual demonstration of how `lower_bound` behaves with the first set of inputs.)
+(See this [graphic](/assets/img/blog/2018-01-25-std-lower-bound.png){ target: _blank } for a visual demonstration of how `lower_bound` behaves with the first set of inputs.)
 
 ## Analysis
 
