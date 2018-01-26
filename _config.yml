@@ -9,8 +9,13 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Build settings
+exclude:
+  - _ignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
 markdown: kramdown
-exclude: [_ignore]
 
 plugins:
   - jekyll-extlinks
@@ -38,7 +43,6 @@ github_username: tribayf
 bitbucket_username: tribayf
 twitter_username: tribayf
 
-# Site settings
 redirects: yes
 
 collections:
