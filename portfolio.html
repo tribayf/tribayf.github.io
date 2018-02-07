@@ -1,19 +1,27 @@
 ---
 layout: page
 title: Portfolio
+categories:
+  - Programming
+  - Music
+  - Misc
 ---
 
-{% assign portfolio = site.portfolio | sort:"category" | group_by:"category" %}
-{% for category in portfolio reversed %}
-  {% assign works = category.items | where:"draft",false | sort:'date' %}
-  {% if works.size > 0 %}
-  <div class="category">
-    <header class="category-header">
-      <h1>{{ category.name }}</h1>
-    </header>
-    {% for work in works reversed %}
-      {% include portfolio-item.html %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endfor %}
+{%- assign portfolio = site.portfolio | sort:"category" | group_by:"category" -%}
+{%- for i in (0..page.categories.size) -%}
+  {%- for category in portfolio -%}
+    {%- if category.name == page.categories[i] -%}
+      {%- assign works = category.items | where:"draft",false | sort:'date' -%}
+      {%- if works.size > 0 -%}
+      <div class="category">
+        <header class="category-header">
+          <h1>{{ category.name }}</h1>
+        </header>
+        {%- for work in works reversed -%}
+          {%- include portfolio-item.html -%}
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
